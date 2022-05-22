@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="row" style="margin: 2% 30% 2% 40%;">
+    <h4>total cost is: {{cost}}</h4>
+  </div>
+<form style="margin:2% 10% 0% 10%;" action="/" method="post">
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Year of Manufacture</label>
+        <input type="number" name="date" class="form-control" id="" placeholder="">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4">KM Driven</label>
+        <input type="number" name="km" class="form-control" id="inputPassword4" placeholder="Km Driven">
+      </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-3">
+          <label for="inputEmail4">Fuel</label>
+          <select class="custom-select" name="fuel">
+            <option value="0" selected>Petrol</option>
+            <option value="1">Diesel</option>
+            <option value="2">CNG</option>
+            <option value="3">LPG</option>
+            <option value="4">Electric</option>
+          </select>
+        </div>
+
+        <div class="form-group col-md-3">
+          <label for="inputPassword4">Seller Type</label>
+          <select class="custom-select" name="seller">
+            <option value="0" selected> Individual</option>
+            <option value="1">Dealer</option>
+            <option value="2">Trustmark Dealer</option>
+          </select>
+        </div>
+        
+        <div class="form-group col-md-3">
+            <label for="inputPassword4">Transmission Type</label>
+            <select class="custom-select" name="t_type">
+              <option value="0" selected>Manual</option>
+              <option value="1">Automatic</option>
+            </select>
+          </div>
+  
+          <div class="form-group col-md-3">
+            <label for="inputPassword4">Owner</label>
+            <select class="custom-select" name="owner">
+              <option value="0" selected>First Owner</option>
+              <option value="1">Second Owner</option>
+              <option value="2">Third Owner</option>
+              <option value="3">Fourth & Above Owner</option>
+              <option value="4">Test Drive Car</option>
+            </select>
+          </div>
+
+
+
+      </div>
+
+  
+ 
+
+
+    <button type="submit" class="btn btn-primary">Send</button>
+  </form>
+
+</body>
+</html>
